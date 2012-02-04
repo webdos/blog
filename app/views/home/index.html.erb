@@ -1,1 +1,8 @@
+<% hello = Post.last %>
+<h3>Find out what we say</h3>
+<div style="font-size: 20px ; border: 2px dashed #bbb ;">
+	<i style="font-size: 20px ;"><%= hello.title %></i><br>
+	<p style="font-size: 20px ;"><%= hello.content %></p>
+	<b style="font-size: 20px ;">by <%= hello.name%></b>
+</div>
 <%= link_to "My Blog", posts_path %>
