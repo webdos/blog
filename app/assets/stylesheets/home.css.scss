@@ -1,3 +1,13 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$blue: #3bbfce;
+$margin : 10px ;
+
+h1 {
+  border-color: $blue;
+  border-width: 2px ;
+  border-style: solid ;
+  color: darken($blue, 9%);
+  padding: $margin ;
+}

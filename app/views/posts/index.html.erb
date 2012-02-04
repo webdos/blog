@@ -12,7 +12,11 @@
 
 <% @posts.each do |post| %>
   <tr>
-    <td><%= post.name %></td>
+    <td><% if post.name == "webdos" %>
+    	      <B>by Webdos</b>
+    	<% else %>
+    	      <%= post.name %>
+    	<% end %></td>
     <td><%= post.title %></td>
     <td><%= post.content %></td>
     <td><%= link_to 'Show', post %></td>

@@ -2,7 +2,11 @@
 
 <p>
   <b>Name:</b>
-  <%= @post.name %>
+  <% if @post.name == "webdos" %>
+    	      <B>by Webdos</b>
+    	<% else %>
+    	      <%= @post.name %>
+    	<% end %>
 </p>
 
 <p>
